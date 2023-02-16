@@ -1,0 +1,14 @@
+{
+  "name": "js-aqa-07-api",
+  "version": "1.0.0",
+  "description": "js-aqa-07-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --record --key 38e550fc-f31e-4557-b1f7-a4734824a481"
+  },
+  "author": "Aleksandr Kochutov",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.5.1"
+  }
+}
