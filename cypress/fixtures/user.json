@@ -1,0 +1,10 @@
+{
+  "id": 1000,
+  "userName": "AleksKochutov",
+  "firstName": "Aleks",
+  "lastName": "Kochutov",
+  "email": "aleks.kochutov@gmail.com",
+  "password": "123qwe!@#",
+  "phone": "+79639979999",
+  "userStatus": 0
+}
