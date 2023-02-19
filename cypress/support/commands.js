@@ -2,6 +2,9 @@ Cypress.Commands.add('createUser', (url, method, body) => {
   cy.request({
     url: url,
     method: method,
+    headers: {
+      api_key: "44399f97-e7da-440b-a39c-4ed7b1026adf"
+    },
     body: {
       id: body.id,
       username: body.username,
@@ -22,23 +25,17 @@ Cypress.Commands.add('createUser', (url, method, body) => {
     })
 })
 
-Cypress.Commands.add('loginUser', (url, method, body) => {
-  cy.request({
-    url: `${url}/login?username=${body.userName}&password=${body.password}`,
-    method: method,
-  }).then((response) => {
-      expect(response.status).to.be.eql(200)
-    })
-})
-
 Cypress.Commands.add('modifyUser', (url, method, body) => {
   cy.request({
-    url: `${url}/${body.userName}`,
+    url: `${url}/${body.username}`,
     method: method,
+    headers: {
+      api_key: "44399f97-e7da-440b-a39c-4ed7b1026adf"
+    },
     body: {
       id: body.id,
       username: body.username,
-      firstName: 'Aleksandr',
+      firstName: 'Java Creator',
       lastName: body.lastName,
       email: body.email,
       password: body.password,
@@ -52,8 +49,11 @@ Cypress.Commands.add('modifyUser', (url, method, body) => {
 
 Cypress.Commands.add('deleteUser', (url, method, body) => {
   cy.request({
-    url: `${url}/${body.userName}`,
+    url: `${url}/${body.username}`,
     method: method,
+    headers: {
+      api_key: "44399f97-e7da-440b-a39c-4ed7b1026adf"
+    },
   }).then((response) => {
       expect(response.status).to.be.eql(200)
     })
