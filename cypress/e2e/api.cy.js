@@ -10,7 +10,6 @@ describe('petstore api (new user)', () => {
 describe('petstore api (modify user)', () => {
   it('modifies created user', () => {
     cy.createUser(url, 'POST', user)
-    cy.loginUser(url, 'GET', user)
     cy.modifyUser(url, 'PUT', user)
   })
 })
@@ -18,7 +17,6 @@ describe('petstore api (modify user)', () => {
 describe('petstore api (delete user)', () => {
   it('removes user', () => {
     cy.createUser(url, 'POST', user)
-    cy.loginUser(url, 'GET', user)
     cy.deleteUser(url, 'DELETE', user)
     })
 })
