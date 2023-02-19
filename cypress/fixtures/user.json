@@ -1,10 +1,10 @@
 {
   "id": 1000,
-  "userName": "AleksKochutov",
-  "firstName": "Aleks",
-  "lastName": "Kochutov",
-  "email": "aleks.kochutov@gmail.com",
+  "username": "James",
+  "firstName": "James",
+  "lastName": "Gosling",
+  "email": "james@gosling.com",
   "password": "123qwe!@#",
-  "phone": "+79639979999",
+  "phone": "+1(099)1232345",
   "userStatus": 0
 }
